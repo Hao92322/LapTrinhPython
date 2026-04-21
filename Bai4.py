@@ -11,3 +11,4 @@ while n>0:
 print("so luong so le = %d" %(sole))
 print("so luong so chan = %d" %(sochan))
 
+
