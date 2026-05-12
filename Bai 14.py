@@ -8,8 +8,9 @@ try:
             #Moneytransfer[i]= moneyinput // Money[i]
             SumMoney += moneyinput//Money[i]
             print(f'Loai {Money[i]} gom {moneyinput//Money[i]} to')
+        else:
+            print(f'Loai {Money[i]} gom 0 to')
         moneyinput = moneyinput % Money[i]
-    
     print(f'TONG CONG CO {SumMoney} TO')
 except:
     print("Sai dinh dang")
