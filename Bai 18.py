@@ -4,7 +4,7 @@ Sothanthien = lambda n : math.gcd(n,int(str(n)[::-1])) == 1
 #Cau b So Chinh Phuong
 SoChinhPhuong = lambda n : math.sqrt(n) in [x for x in range(1,round(math.sqrt(n))+1)]
 #Cau c So dong nhat
-SoDongNhat = lambda n : n>0 and n%11 ==0
+SoDongNhat = lambda n : n>0 and all(y == str(n)[0] for y in [x for x in str(n)])
 #Cau d So Hoan Thien
 SoHoanThien = lambda n : n == sum([x for x in range(1,n//2+1) if n%x == 0])
 #Cau e So phong phu
@@ -38,9 +38,9 @@ def InSoTheoLambda(ld):
         if(ld(i)):
             print(i)
 #Huong dan su dung test ham nao thi go comment ham do
-InSoTheoLambda(Sothanthien)
+#InSoTheoLambda(Sothanthien)
 # InSoTheoLambda(SoChinhPhuong)
-# InSoTheoLambda(SoDongNhat)
+InSoTheoLambda(SoDongNhat)
 # InSoTheoLambda(SoHoanThien)
 # InSoTheoLambda(SoPhongPhu)
 # InSoTheoLambda(SoTangDan)
